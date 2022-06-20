@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="User_UserMasterPage" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
+<link href="../default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div style="width:1100px;margin-left:180px;margin-top:20px">
+			<h2 style="color:white;font-family:'Times New Roman';font-size:30px">WHATSAPP WEB CLONE</h2>
+		</div>
+	<div id="header-wrapper" style="height:50px">
+	<div id="header" class="container">
+		
+		<div id="menu" style="margin-left:-1200px;width:950px;margin-top:-18px">
+			<ul>
+             <li><a href="home.aspx" accesskey="2" title="">home</a></li>
+             <li><a href="chat.aspx" accesskey="2" title="">Chat</a></li>
+                <li><a href="StatusUpdate.aspx" accesskey="2" title="">Post</a></li>
+                <li><a href="profilepic.aspx" accesskey="2" title=""> Profile Picture</a></li>
+				<li><a href="FindFriends.aspx" accesskey="4" title="">Find Friends</a></li>
+				<li><a href="ViewFriendRequests.aspx" accesskey="5" title="">View FriendRequests</a></li>
+                <li><a href="FriendsList.aspx" accesskey="5" title="">Friends List</a></li>
+                <li><a href="../User.aspx" accesskey="5" title="">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+        <div style="margin-left:1000px;margin-top:-40px;font-size:30px;">
+           
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+             <asp:Label runat="server" ForeColor="Purple" ID="lblname" Text=""></asp:Label><br />
+             <asp:Image ID="ImageButton1" runat="server" Height="200px" Width="200px" />
+            </asp:ContentPlaceHolder>
+              
+    </div>
+	</div>
+    
+	<div id="banner" style="background-color:wheat">
+		<div style="min-height:1200px;width:100%;margin-top:-100px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+		</div>
+	</div>
+	
+<%--<div style="text-align:center">
+	<p>&copy; Untitled. All rights reserved.</p>
+</div>--%>
+     
+</body>
+</html>

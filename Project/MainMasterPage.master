@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs" Inherits="MainMasterPage" %>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+    </head>
+<body>
+    <div style="width:1100px;margin-left:180px;margin-top:20px">
+			<h2 style="color:white;font-family:'Times New Roman';font-size:30px">WHATSAPP WEB CLONE</h2>
+		</div>
+	<div id="header-wrapper" style="height:50px">
+	<div id="header" class="container">
+		
+		<div id="menu" style="margin-left:-1200px;width:600px;margin-top:-18px">
+			<ul>
+				<li class="current_page_item"><a href="Home.aspx" accesskey="1" title="">Home</a></li>
+				<li><a href="AboutUs.aspx" accesskey="2" title="">About Us</a></li>
+				<li><a href="ContactUs.aspx" accesskey="4" title="">Contact Us</a></li>
+				<li><a href="Admin.aspx" accesskey="5" title="">Admin</a></li>
+                <li><a href="User.aspx" accesskey="5" title="">User</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<div id="banner" style="background-color:wheat">
+		<div style="min-height:20px;width:100%;margin-top:-100px;height:900px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+		</div>
+	</div>
+	
+<%--<div style="text-align:center">
+	<p>&copy; Untitled. All rights reserved.</p>
+</div>--%>
+</body>
+</html>
+
